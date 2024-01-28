@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Shorts2Videos",
+    "description": "Enjoy watching YouTube shorts in the regular video player the way it's meant to be.",
+    "version": "1",
+    "action": {
+        "_comment": "code for the little window?",
+        "default_popup": "popup/popup.html"
+    },
+    "icons": {
+        "16": "images/icon.png",
+        "32": "images/icon.png",
+        "48": "images/icon.png",
+        "128": "images/icon.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+}
